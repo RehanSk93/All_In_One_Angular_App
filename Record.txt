@@ -1,0 +1,9 @@
+------------------------------------------------------------------------------------
+				All In One Angular App
+------------------------------------------------------------------------------------
+1. Install Angular Application - Done
+2. Integrate Bootstrap - Done
+3. Integrate Angular Material - Done
+4. Integrate any bootstrap template -pending
+
+
