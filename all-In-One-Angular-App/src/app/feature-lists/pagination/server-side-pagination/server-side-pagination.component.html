@@ -1,0 +1,32 @@
+<div class="alert alert-success text-center">
+  <strong>Angular 8 + Node - Server Side Pagination</strong>
+</div>
+
+
+<div class="card text-center">
+  <div class="card-body">
+    <div *ngFor="let item of pageOfItems">{{item.name}}</div>
+  </div>
+  <div class="card-footer pb-0 pt-3 text justify-content-center">
+    <ul *ngIf="pager.pages && pager.pages.length" class="pagination justify-content-center">
+      <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item first-item">
+        <a routerLink='/pagination/server-side/' [queryParams]="{ page: 1 }" class="page-link">First</a>
+      </li>
+      <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item previous-item">
+        <a routerLink='/pagination/server-side/' [queryParams]="{ page: pager.currentPage - 1 }"
+          class="page-link">Previous</a>
+      </li>
+      <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}"
+        class="page-item number-item">
+        <a routerLink='/pagination/server-side/' [queryParams]="{ page: page }" class="page-link">{{page}}</a>
+      </li>
+      <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item next-item">
+        <a routerLink='/pagination/server-side/' [queryParams]="{ page: pager.currentPage + 1 }"
+          class="page-link">Next</a>
+      </li>
+      <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item last-item">
+        <a routerLink='/pagination/server-side/' [queryParams]="{ page: pager.totalPages }" class="page-link">Last</a>
+      </li>
+    </ul>
+  </div>
+</div>

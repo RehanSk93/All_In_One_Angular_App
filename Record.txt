@@ -5,5 +5,25 @@
 2. Integrate Bootstrap - Done
 3. Integrate Angular Material - Done
 4. Integrate any bootstrap template -pending
+5. Folder structure - done
+	common folder - done
+	  header design - done
+	  Footer design - done
+	  left-nav-menu (list of features implements here) - done
+	  layout design - done
+
+	feature-lists folder
+		- pagination - done
+
+
+6. routing (Main Route config) - done
+
+
+
+
+
+------------------------------------------------------------------------------------
+				Feature Lists Implementation
+------------------------------------------------------------------------------------
 
 
