@@ -15,6 +15,8 @@ import { ServerSidePaginationComponent } from "./feature-lists/pagination/server
 import { ClientSidePaginationComponent } from "./feature-lists/pagination/client-side-pagination/client-side-pagination.component";
 import { HttpClientModule } from "@angular/common/http";
 
+import { NgxPaginationModule } from "ngx-pagination";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,7 @@ import { HttpClientModule } from "@angular/common/http";
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgxPaginationModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

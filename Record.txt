@@ -9,14 +9,14 @@
 	common folder - done
 	  header design - done
 	  Footer design - done
-	  left-nav-menu (list of features implements here) - done
-	  layout design - done
+	  left-nav-menu (list of features routing) - done
+	  layout design (Header, footer, left-menu with "root router")  - done
 
 	feature-lists folder
-		- pagination - done
+		- List of all features here********
 
 
-6. routing (Main Route config) - done
+6. routing (Controll all feature list here) - done
 
 
 
@@ -26,4 +26,12 @@
 				Feature Lists Implementation
 ------------------------------------------------------------------------------------
 
+1. pagination
+	- server side => Done
+	- client side => pending
+		ref - https://jasonwatmore.com/post/2020/10/03/angular-10-simple-pagination-example
+	- client side => pending
+		ref - ngx-pagination
 
+2. Searching
+	- 

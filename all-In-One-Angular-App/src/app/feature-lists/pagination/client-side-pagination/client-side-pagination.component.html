@@ -1,3 +1,41 @@
-<p>
-  client-side-pagination works!
-</p>
+<div class="alert alert-success text-center">
+  <strong>Pagination for Angular | npm i ngx-pagination</strong>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Title</th>
+          <th scope="col">Body</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of collection | paginate: { itemsPerPage: 5, currentPage: p }">
+          <td>{{ item.id }}</td>
+          <td>{{ item.title }}</td>
+          <td>{{ item.body }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class=" row justify-content-end">
+      <pagination-controls (pageChange)="p = $event" maxSize="7"></pagination-controls>
+    </div>
+  </div>
+</div>
+
+
+<!-- Implementation logic  -->
+<div class="row">
+  <div class="col-md-12">
+    <h3>Quick Start</h3>
+    <div class="alert alert-success">
+      <strong>npm i ngx-pagination</strong> => Install in Angular
+    </div>
+    <div class="alert alert-success">
+      Reference URL <a href="https://www.npmjs.com/package/ngx-pagination#angular-version" target="_blank"
+        rel="noopener noreferrer">Click here</a>
+    </div>
+  </div>
+</div>
