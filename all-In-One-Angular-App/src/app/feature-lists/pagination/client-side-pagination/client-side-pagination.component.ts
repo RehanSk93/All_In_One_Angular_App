@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./client-side-pagination.component.css"],
 })
 export class ClientSidePaginationComponent implements OnInit {
-  p: number = 1;
+  p: number = 1; // Set your current page
   collection: Object = [];
   constructor(private http: HttpClient) {}
 

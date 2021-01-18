@@ -30,8 +30,11 @@
 	- server side => Done
 	- client side => pending
 		ref - https://jasonwatmore.com/post/2020/10/03/angular-10-simple-pagination-example
-	- client side => pending
-		ref - ngx-pagination
+	- client side => done
+		ref - https://www.npmjs.com/package/ngx-pagination
 
 2. Searching
 	- 
+
+3. Shorting
+

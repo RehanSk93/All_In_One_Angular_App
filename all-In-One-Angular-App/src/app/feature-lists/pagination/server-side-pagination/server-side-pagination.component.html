@@ -3,7 +3,7 @@
 </div>
 
 
-<div class="card text-center">
+<div class="card text-center" *ngIf='pageOfItems.length >= 1'>
   <div class="card-body">
     <div *ngFor="let item of pageOfItems">{{item.name}}</div>
   </div>
@@ -31,6 +31,10 @@
   </div>
 </div>
 
+<!-- Show message if backend server is not started -->
+<div class="alert alert-danger text-center" *ngIf='pageOfItems.length <= 0'>
+  <strong>Backend | Node server is not started</strong>
+</div>
 
 <!-- Step of implementation -->
 <hr>
