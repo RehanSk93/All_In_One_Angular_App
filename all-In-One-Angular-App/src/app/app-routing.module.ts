@@ -4,7 +4,8 @@ import { FileUploadingComponent } from "./feature-lists/file-uploading/file-uplo
 import { ClientSidePaginationComponent } from "./feature-lists/pagination/client-side-pagination/client-side-pagination.component";
 import { PaginationComponent } from "./feature-lists/pagination/pagination.component";
 import { ServerSidePaginationComponent } from "./feature-lists/pagination/server-side-pagination/server-side-pagination.component";
-import { SearchItemsComponent } from "./feature-lists/search-items/search-items.component";
+import { SearchDemoOneComponent } from "./feature-lists/search/search-demo-one/search-demo-one.component";
+import { SearchItemsComponent } from "./feature-lists/search/search-items.component";
 
 const routes: Routes = [
   {
@@ -15,7 +16,11 @@ const routes: Routes = [
       { path: "client-side", component: ClientSidePaginationComponent },
     ],
   },
-  { path: "searching", component: SearchItemsComponent },
+  {
+    path: "searching",
+    component: SearchItemsComponent,
+    children: [{ path: "search-demo-one", component: SearchDemoOneComponent }],
+  },
   { path: "file-uploading", component: FileUploadingComponent },
 ];
 

@@ -9,13 +9,14 @@ import { FooterComponent } from "./common/footer/footer.component";
 import { LeftNavMenuComponent } from "./common/left-nav-menu/left-nav-menu.component";
 import { LayoutComponent } from "./common/layout/layout.component";
 import { PaginationComponent } from "./feature-lists/pagination/pagination.component";
-import { SearchItemsComponent } from "./feature-lists/search-items/search-items.component";
+import { SearchItemsComponent } from "./feature-lists/search/search-items.component";
 import { FileUploadingComponent } from "./feature-lists/file-uploading/file-uploading.component";
 import { ServerSidePaginationComponent } from "./feature-lists/pagination/server-side-pagination/server-side-pagination.component";
 import { ClientSidePaginationComponent } from "./feature-lists/pagination/client-side-pagination/client-side-pagination.component";
 import { HttpClientModule } from "@angular/common/http";
 
 import { NgxPaginationModule } from "ngx-pagination";
+import { SearchDemoOneComponent } from "./feature-lists/search/search-demo-one/search-demo-one.component";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NgxPaginationModule } from "ngx-pagination";
     FileUploadingComponent,
     ServerSidePaginationComponent,
     ClientSidePaginationComponent,
+    SearchDemoOneComponent,
   ],
   imports: [
     BrowserModule,
