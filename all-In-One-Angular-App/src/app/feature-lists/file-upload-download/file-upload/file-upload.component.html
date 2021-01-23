@@ -1,0 +1,7 @@
+<h1 class="display-4 text-center">Basic Example of file Uploading</h1>
+<hr>
+<input type="file" (change)='onFileSelected($event)' style="display: none;" #fileInput>
+<button class="btn btn-info btn-sm" (click)='fileInput.click()'>Select File</button>
+<span> | </span>
+<button class="btn btn-success btn-sm" (click)='onUploadFile()'>Upload File</button>
+<span *ngIf='message' class="ml-5"> {{ message }}</span>

@@ -10,13 +10,14 @@ import { LeftNavMenuComponent } from "./common/left-nav-menu/left-nav-menu.compo
 import { LayoutComponent } from "./common/layout/layout.component";
 import { PaginationComponent } from "./feature-lists/pagination/pagination.component";
 import { SearchItemsComponent } from "./feature-lists/search/search-items.component";
-import { FileUploadingComponent } from "./feature-lists/file-uploading/file-uploading.component";
 import { ServerSidePaginationComponent } from "./feature-lists/pagination/server-side-pagination/server-side-pagination.component";
 import { ClientSidePaginationComponent } from "./feature-lists/pagination/client-side-pagination/client-side-pagination.component";
 import { HttpClientModule } from "@angular/common/http";
 
 import { NgxPaginationModule } from "ngx-pagination";
 import { SearchDemoOneComponent } from "./feature-lists/search/search-demo-one/search-demo-one.component";
+import { FileUploadDownloadComponent } from './feature-lists/file-upload-download/file-upload-download.component';
+import { FileUploadComponent } from './feature-lists/file-upload-download/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +28,11 @@ import { SearchDemoOneComponent } from "./feature-lists/search/search-demo-one/s
     LayoutComponent,
     PaginationComponent,
     SearchItemsComponent,
-    FileUploadingComponent,
     ServerSidePaginationComponent,
     ClientSidePaginationComponent,
     SearchDemoOneComponent,
+    FileUploadDownloadComponent,
+    FileUploadComponent,
   ],
   imports: [
     BrowserModule,

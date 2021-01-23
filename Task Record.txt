@@ -36,5 +36,11 @@
 2. Searching
 	- 
 
-3. Shorting
+3. Shorting - backend completed, now design in frontend
 
+4. Material - all material related task here
+
+5. file uploading using Multer
+	https://www.youtube.com/watch?v=-Hvmj8yXfyU
+
+6. file uploading with progress bar => https://www.youtube.com/watch?v=YkvqLNcJz3Y&t=605s

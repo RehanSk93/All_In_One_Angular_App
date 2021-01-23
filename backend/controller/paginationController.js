@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const paginate = require("jw-paginate");
+const paginate = require("jw-paginate"); // NPM Package need to install
 
 router.get("/", (req, res) => {
   // example array of 150 items to be paged

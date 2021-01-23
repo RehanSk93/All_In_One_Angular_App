@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { FileUploadingComponent } from "./feature-lists/file-uploading/file-uploading.component";
+import { FileUploadDownloadComponent } from "./feature-lists/file-upload-download/file-upload-download.component";
+import { FileUploadComponent } from "./feature-lists/file-upload-download/file-upload/file-upload.component";
 import { ClientSidePaginationComponent } from "./feature-lists/pagination/client-side-pagination/client-side-pagination.component";
 import { PaginationComponent } from "./feature-lists/pagination/pagination.component";
 import { ServerSidePaginationComponent } from "./feature-lists/pagination/server-side-pagination/server-side-pagination.component";
@@ -21,7 +22,11 @@ const routes: Routes = [
     component: SearchItemsComponent,
     children: [{ path: "search-demo-one", component: SearchDemoOneComponent }],
   },
-  { path: "file-uploading", component: FileUploadingComponent },
+  {
+    path: "file-upload-download",
+    component: FileUploadDownloadComponent,
+    children: [{ path: "file-upload", component: FileUploadComponent }],
+  },
 ];
 
 @NgModule({
